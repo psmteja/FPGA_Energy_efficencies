@@ -215,19 +215,19 @@ Amdahl’s Law Speedup Estimate
 ## Steps for Execution
 
 ### 1) profile latency
-python 01_profile_onnx.py --model resnet50-fp32.onnx --runs 5
+- python 01_profile_onnx.py --model resnet50-fp32.onnx --runs 5
 
-# 2) shapes, bytes, FLOPs
-python 02_shapes_flops_bytes.py --model resnet50-fp32.onnx
+###  2) shapes, bytes, FLOPs
+- python 02_shapes_flops_bytes.py --model resnet50-fp32.onnx
 
-# 3) merge + roofline tags (set your host ceilings)
-python 03_merge_profile_metrics.py --peak-flops 1.0e12 --mem-bw 5.0e10
+###  3) merge + roofline tags (set your host ceilings)
+- python 03_merge_profile_metrics.py --peak-flops 1.0e12 --mem-bw 5.0e10
 
-# 4) critical path
-python 04_critical_path.py --model resnet50-fp32.onnx
+###  4) critical path
+- python 04_critical_path.py --model resnet50-fp32.onnx
 
-# 5) energy estimate (set your measured avg platform power)
-python 05_energy_estimate.py --avg_power_w 65.0
+###  5) energy estimate (set your measured avg platform power)
+- python 05_energy_estimate.py --avg_power_w 65.0
 
-# 6) plots
-python 06_plots.py
+###  6) plots
+- python 06_plots.py
