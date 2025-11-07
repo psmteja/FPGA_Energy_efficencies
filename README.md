@@ -208,7 +208,5 @@ Amdahl’s Law Speedup Estimate
 
 ---
 
-**Author:** Your Name  
-**Affiliation:** Your Lab / Organization  
-**Contact:** your.email@domain.com  
-**License:** MIT
+**Author:** Sai Puppala 
+**Affiliation:** UIUC
