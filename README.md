@@ -212,9 +212,9 @@ Amdahl’s Law Speedup Estimate
 
 ---
 
-##Steps for Execution
+## Steps for Execution
 
-# 1) profile latency
+### 1) profile latency
 python 01_profile_onnx.py --model resnet50-fp32.onnx --runs 5
 
 # 2) shapes, bytes, FLOPs
